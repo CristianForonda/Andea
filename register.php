@@ -15,7 +15,7 @@
         $password = $_POST['password_registrar'];
         $rol = $_POST['rol'];
         
-        $clave = hash('sha512', $password);
+        $password = hash('sha512', $password);
         
         //$clave2 = hash('sha512', $clave2);
         
@@ -31,7 +31,7 @@
                 echo "Error: " . $prueba_error->getMessage();
             }
             
-            $statement = $conexion->prepare('SELECT * FROM usuario WHERE correo = :correo LIMIT 1');
+            $statement = $conexion->prepare('SELECT * FROM usuario WHERE correo = :email_registrar LIMIT 1');
             $statement->execute(array(':email_registrar' => $correo));
             $resultado = $statement->fetch();
             
@@ -48,12 +48,13 @@
         }
         
         if ($error == ''){
-            $statement = $conexion->prepare('INSERT INTO usuario (id, nombre, apellido, correo, institucion, password, rol ) VALUES (null, :nombre, :apellido, :email_registrar, :institucion, :password_registrar, :rol )');
+            $statement = $conexion->prepare('INSERT INTO usuario (nombre, apellido, correo, institucion, password, rol ) VALUES (:nombre, :apellido, :email_registrar, :institucion, :password_registrar, :rol )');
             $statement->execute(array(
                 
                 ':nombre' => $nombre,
                 ':apellido' => $apellido,
                 ':email_registrar' => $correo,
+                ':institucion'=>$institucion,
                 ':password_registrar'=> $password,
                 ':rol'=> $rol
                 

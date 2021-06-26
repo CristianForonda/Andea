@@ -16,18 +16,18 @@
 
         <div class="signin-signup">
 
-          <form action="#" class="sign-in-form">
+          <form action="../login.php" class="sign-in-form" method="post">
 
             <h2 class="title">Iniciar Sesión</h2>
 
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Correo Electronico" />
+              <input type="text" name="email_usuario" placeholder="Correo Electronico" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="password" name="password_usuario" placeholder="Contraseña" />
             </div>
 
             <input type="submit" value="Ingresar" class="btn solid" />
@@ -52,42 +52,42 @@
             
           </form>
 
-          <form action="#" class="sign-up-form">
+          <form action="register.php" class="sign-up-form" method="post">
 
             <h2 class="title">Registrar</h2>
 
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nombre" />
+              <input type="text" name="nombre" placeholder="Nombre" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Apellido" />
+              <input type="text" name="apellido" placeholder="Apellido" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Correo Electronico" />
+              <input type="email" name="email_registrar" placeholder="Correo Electronico" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-school"></i>
-              <input type="text" placeholder="Intitucion educatiba" />
+              <input type="text" name="institucion" placeholder="Intitucion educatiba" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" name="password_registrar" placeholder="Password" />
             </div>
 
             <div class="input-field">
               <i class="fas fa-school"></i>
-              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+              <select class="form-select form-select-lg mb-3" name="rol" aria-label=".form-select-lg example">
                 <option selected>Rol</option>
-                <option value="1">Estudiante</option>
-                <option value="2">Docente</option>
-                <option value="3">Otro</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="docente">Docente</option>
+                <option value="otro">Otro</option>
               </select>
             </div>       
 

@@ -127,7 +127,7 @@
           <div class="container">
             <div class="row">
 
-              <div class="col"> <p> Para obtener el contenido completo debe <a class="link" href="login.html">iniciar sesión </a> , de esta forma podrá acceder a todos los documentos PDF donde se explican paso a paso cada uno de los temas y ejercicios propuestos. </p></div>
+              <div class="col"> <p> Para obtener el contenido completo debe <a class="link" href="../login.php">iniciar sesión </a> , de esta forma podrá acceder a todos los documentos PDF donde se explican paso a paso cada uno de los temas y ejercicios propuestos. </p></div>
 
               <div class="col"> <p> Algunos comandos no son soportados por las dos herramientas web presentadas, para esto recomendamos descargar la aplicación de escritorio  <a class="link" href="https://www.rstudio.com/products/rstudio/download/#download">Aqui </a>. </p></div>
               
