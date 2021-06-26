@@ -1,7 +1,7 @@
 <?php session_start();
 
-    if(isset($_SESSION['usuario'])) {
-        header('location: Andea-completo-vista.php');
+    if(isset($_SESSION['email_usuario'])) {
+        header('location: principal.php');
     }else{
         header('location: vistas/index-vista.php');
     }

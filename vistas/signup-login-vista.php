@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="login/css/style.css" />
     <title>Andea</title>
+
+    <link rel = "shortcut icon" type = "image / x-icon" href = "Andea/favicon.ico">
   </head>
 
   <body>
@@ -16,7 +18,7 @@
 
         <div class="signin-signup">
 
-          <form action="../login.php" class="sign-in-form" method="post">
+          <form action="login.php" class="sign-in-form" method="post">
 
             <h2 class="title">Iniciar Sesión</h2>
 
@@ -31,6 +33,12 @@
             </div>
 
             <input type="submit" value="Ingresar" class="btn solid" />
+
+            <?php if(!empty($error)): ?>
+            <div class="mensaje">
+                <?php echo $error; ?>
+            </div>
+            <?php endif; ?>
 
             <!--
             <p class="social-text">Or Sign in with social platforms</p>

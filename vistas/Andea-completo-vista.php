@@ -61,7 +61,7 @@
             <li><a href="#team-section" class="page-scroll">Participantes</a></li>
             <li><a href="#contact-section" class="page-scroll">contacto</a></li>
             <li><a href="#contact-section" class="page-scroll">contacto</a></li>
-            <li><a href="#">Cerrar Sesion</a></li>
+            <li><a href="cerrar.php">Cerrar Sesion</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 

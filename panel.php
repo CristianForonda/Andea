@@ -1,7 +1,7 @@
 <?php session_start();
 
     if(isset($_SESSION['email_usuario'])){
-        require 'vistas/Andea-completo-vista.php';
+        require 'vistas/panel-vista.php';
     }else{
         header ('location: login.php');
     }

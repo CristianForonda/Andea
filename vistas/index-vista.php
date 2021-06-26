@@ -16,21 +16,21 @@
 
 
 
-<link rel = "shortcut icon" type = "image / x-icon" href = "Andea/favicon.ico">
+<link rel = "shortcut icon" type = "image / x-icon" href = "../Andea/favicon.ico">
 
 
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="Andea/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="Andea/fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css"  href="../Andea/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../Andea/fonts/font-awesome/css/font-awesome.css">
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="Andea/css/style.css">
-<link rel="stylesheet" type="text/css" href="Andea/css/prettyPhoto.css">
+<link rel="stylesheet" type="text/css"  href="../Andea/css/style.css">
+<link rel="stylesheet" type="text/css" href="../Andea/css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="Andea/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="../Andea/js/modernizr.custom.js"></script>
 
 
 
@@ -49,7 +49,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="Andea.html">ANDEA </a> </div>
+          <a class="navbar-brand" href="../index.php">ANDEA </a> </div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -168,90 +168,90 @@
           <div class="portfolio-items">
             <div class="col-sm-6 col-md-3 col-lg-3 web">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 1.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 1.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 1.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 1.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 app">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 2.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 2.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 2.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 2.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 web">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 3.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 3.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 3.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 3.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 web">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 9.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 9.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 9.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 9.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 app">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 10.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 10.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 10.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 10.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 branding">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 6.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 6.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 6.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 6.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 branding app">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 7.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 7.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 7.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 7.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 web">
               <div class="portfolio-item">
-                <div class="hover-bg"> <a href="Andea/img/portfolio/imagen 8.png" rel="prettyPhoto">
+                <div class="hover-bg"> <a href="../Andea/img/portfolio/imagen 8.png" rel="prettyPhoto">
                   <div class="hover-text">
                     <h4>GIEN</h4>
                     <small>Generado Rstudio</small>
                     <div class="clearfix"></div>
                   </div>
-                  <img src="Andea/img/portfolio/imagen 8.png" class="img-responsive" alt=""> </a> </div>
+                  <img src="../Andea/img/portfolio/imagen 8.png" class="img-responsive" alt=""> </a> </div>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@
         </div>
         <div id="row">
           <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="Andea/img/team/GIEN LOGO.png" alt="..." class="team-img">
+            <div class="thumbnail"> <img src="../Andea/img/team/GIEN LOGO.png" alt="..." class="team-img">
               <div class="caption">
                <!-- <h3>Javier Rodriguez</h3>
                 <p>Director</p> -->
@@ -275,21 +275,21 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="Andea/img/team/BIOLOGIA LOGO.png" alt="..." class="team-img">
+            <div class="thumbnail"> <img src="../Andea/img/team/BIOLOGIA LOGO.png" alt="..." class="team-img">
               <div class="caption">
                 
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="Andea/img/team/UNIMAG LOGO.png" alt="..." class="team-img">
+            <div class="thumbnail"> <img src="../Andea/img/team/UNIMAG LOGO.png" alt="..." class="team-img">
               <div class="caption">
                 
               </div>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 team">
-            <div class="thumbnail"> <img src="Andea/img/team/ANDEA LOGO.png" alt="..." class="team-img">
+            <div class="thumbnail"> <img src="../Andea/img/team/ANDEA LOGO.png" alt="..." class="team-img">
               <div class="caption">
                 
               </div>
@@ -349,6 +349,6 @@
 
     <!-- Javascripts
       ================================================== --> 
-    <script type="text/javascript" src="Andea/js/main.js"></script>
+    <script type="text/javascript" src="../Andea/js/main.js"></script>
   </body>
 </html>

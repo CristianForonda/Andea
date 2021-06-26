@@ -1,6 +1,6 @@
 <?php session_start();
 
-    if(isset($_SESSION['usuario'])) {
+    if(isset($_SESSION['email_usuario'])) {
         header('location: index.php');
     }
 
@@ -31,9 +31,15 @@
         
         if ($resultado !== false){
             $_SESSION['email_usuario'] = $usuario;
-            header('location: principal.php');
+
+            if($usuario=="admin@gmail.com"){
+                header('location: panel.php');
+            }else{
+                header('location: principal.php');
+            }
+            
         }else{
-            $error .= '<i>Este usuario no existe</i>';
+            $error .= '<i>Este usuario o contraseña incorrectos.</i>';
         }
     }
     

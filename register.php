@@ -1,6 +1,6 @@
 <?php session_start();
 
-    if(isset($_SESSION['usuario'])) {
+    if(isset($_SESSION['email_usuario'])) {
         header('location: index.php');
     }
 
@@ -48,7 +48,14 @@
         }
         
         if ($error == ''){
-            $statement = $conexion->prepare('INSERT INTO usuario (nombre, apellido, correo, institucion, password, rol ) VALUES (:nombre, :apellido, :email_registrar, :institucion, :password_registrar, :rol )');
+            // $statement = $conexion->prepare('INSERT INTO usuario (nombre, apellido, correo, institucion, password, rol ) VALUES (:nombre, :apellido, :email_registrar, :institucion, :password_registrar, :rol )');
+            $statement = $conexion->prepare('INSERT INTO usuario SET
+                nombre = :nombre,
+                apellido = :apellido,
+                correo = :email_registrar,
+                institucion = :institucion,
+                password = :password_registrar,
+                rol = :rol');
             $statement->execute(array(
                 
                 ':nombre' => $nombre,
@@ -60,7 +67,7 @@
                 
             ));
             
-            $error .= '<i style="color: green;">Usuario registrado exitosamente</i>';
+            $error .= '<i style="color: green;">Usuario registrado exitosamente. Recuerde que solo podra acceder al conenido completo cuando sea aceptado, esto se le notificara via correo registrado.</i>';
         }
     }
 

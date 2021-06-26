@@ -8,12 +8,14 @@
     <meta name="generator" content="Hugo 0.83.1">
     <title>Andea-Panel</title>
 
+    <link rel = "shortcut icon" type = "image / x-icon" href = "Andea/favicon.ico">
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
 
     
 
     <!-- Bootstrap core CSS -->
-<link href="../dashboard/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dashboard/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -33,19 +35,19 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="../dashboard/dashboard.css" rel="stylesheet">
+    <link href="dashboard/dashboard.css" rel="stylesheet">
   </head>
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-2 col-lg-2 me-0 px-3" href="#">Andea</a>
+  <a class="navbar-brand col-md-2 col-lg-2 me-0 px-3" href="principal.php">Andea</a>
   <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="../cerrar.php">Cerrar Sesion</a>
+      <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
     </li>
   </ul>
 </header>
@@ -56,13 +58,13 @@
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="panel-vista.php">
+            <a class="nav-link" href="panel.php">
               <span data-feather="home"></span>
               Principal
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Estadisticas-vista.php">
+            <a class="nav-link active" aria-current="page" href="Estadisticas.php">
               <span data-feather="bar-chart-2"></span>
               Estadisticas
             </a>
@@ -77,11 +79,7 @@
     </nav>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Estadisticas de solicitudes por dia</h1>
-      </div>
-
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      
 
       <h2>Por instituciones</h2>
 
@@ -128,14 +126,20 @@
           </tbody>
         </table>
       </div>
+
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Estadisticas de solicitudes por dia</h1>
+      </div>
+
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
       
     </main>
   </div>
 </div>
 
 
-    <script src="../dashboard/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard/assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../dashboard/dashboard.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard/dashboard.js"></script>
   </body>
 </html>
