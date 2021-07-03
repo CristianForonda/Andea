@@ -13,7 +13,7 @@
         $clave = hash('sha512', $clave);
         
         try{
-            $conexion = new PDO('mysql:host=localhost;dbname=andea_database', 'root', '');
+            $conexion = new PDO('mysql:host=localhost;dbname=andeauni_database', 'andeauni_andeauni', 'Rn?.,mm!1;[i');
             }catch(PDOException $prueba_error){
                 echo "Error: " . $prueba_error->getMessage();
             }
@@ -30,14 +30,17 @@
         $resultado = $statement->fetch();
         
         if ($resultado !== false){
-            $_SESSION['email_usuario'] = $usuario;
-
-            if($usuario=="admin@gmail.com"){
-                header('location: panel.php');
-            }else{
-                header('location: principal.php');
+            if (!$resultado['is_active']){
+                $error .= '<i>Usted aun no ha sido aprobado.</i>';
+            } else {
+                $_SESSION['email_usuario'] = $usuario;
+    
+                if($usuario=="admin@gmail.com"){
+                    header('location: panel.php');
+                }else{
+                    header('location: principal.php');
+                }
             }
-            
         }else{
             $error .= '<i>Este usuario o contraseña incorrectos.</i>';
         }

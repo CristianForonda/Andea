@@ -35,28 +35,10 @@
             <input type="submit" value="Ingresar" class="btn solid" />
 
             <?php if(!empty($error)): ?>
-            <div class="mensaje">
-                <?php echo $error; ?>
-            </div>
+              <div class="mensaje">
+                  <?php echo $error; ?>
+              </div>
             <?php endif; ?>
-
-            <!--
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-            -->
             
           </form>
 
@@ -101,44 +83,40 @@
 
             <input type="submit" class="btn" value="Crear cuenta" />
 
-            <!--
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-            -->
-
           </form>
+
         </div>
+
       </div>
 
       <div class="panels-container">
+
         <div class="panel left-panel">
+
           <div class="content">
+
             <h3>No tienes cuenta?</h3>
+
             <p>
               Registrate fácil mente llenando los siguientes datos
             </p>
+
             <button class="btn transparent" id="sign-up-btn">
               Registrar
             </button>
+
           </div>
+
           <img src="login/img/white_logo_transparent_background.png" class="image" alt="" />
+
         </div>
+
         <div class="panel right-panel">
+
           <div class="content">
+
             <h3>Ya tienes una cuenta?</h3>
+
             <p>
               Solo podras iniciar sesion hasta ser aprobado, esto se te notificara al correo electronico proporcionado.
             </p>
@@ -146,12 +124,18 @@
             <button class="btn transparent" id="sign-in-btn">
               Inicia sesión
             </button>
+
           </div>
           <img src="" class="image" alt="" />
+
         </div>
+
       </div>
+
     </div>
 
     <script src="login/js/app.js"></script>
+
   </body>
+  
 </html>

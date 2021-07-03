@@ -5,7 +5,7 @@
     }
 
     
-    
+    //captures the data entered in the login view
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         
         $nombre = $_POST['nombre'];
@@ -17,16 +17,15 @@
         
         $password = hash('sha512', $password);
         
-        //$clave2 = hash('sha512', $clave2);
-        
         $error = '';
         
         if (empty($nombre) or empty($apellido) or empty($correo) or empty($institucion) or empty($password) or empty($rol)){
             
             $error .= '<i>Favor de rellenar todos los campos</i>';
-        }else{
+        }else{ 
+            //verify that if the user is already registered previously
             try{
-                $conexion = new PDO('mysql:host=localhost;dbname=andea_database', 'root', '');
+                $conexion = new PDO('mysql:host=localhost;dbname=andeauni_database', 'andeauni_andeauni', 'Rn?.,mm!1;[i');
             }catch(PDOException $prueba_error){
                 echo "Error: " . $prueba_error->getMessage();
             }
@@ -40,15 +39,16 @@
                 $error .= '<i>Este usuario ya existe</i>';
             }
             
-           // if ($clave != $clave2){
-          //      $error .= '<i> Las contraseñas no coinciden</i>';
-         //  }
+       //   check if the two passwords match   
+       //   if ($clave != $clave2){
+       //       $error .= '<i> Las contraseñas no coinciden</i>';
+       //   }
             
             
         }
         
         if ($error == ''){
-            // $statement = $conexion->prepare('INSERT INTO usuario (nombre, apellido, correo, institucion, password, rol ) VALUES (:nombre, :apellido, :email_registrar, :institucion, :password_registrar, :rol )');
+            //the data entered by the user is taken and stored in the database
             $statement = $conexion->prepare('INSERT INTO usuario SET
                 nombre = :nombre,
                 apellido = :apellido,

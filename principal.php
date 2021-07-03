@@ -5,5 +5,6 @@
     }else{
         header ('location: login.php');
     }
-        
+    
+    // check if there is already a session started
 ?>
